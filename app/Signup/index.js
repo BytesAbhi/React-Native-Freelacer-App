@@ -19,15 +19,12 @@ export default function Signup({ navigation }) {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [userDetails, setUserDetails] = useState(null);
 
-  
-
   const handleSignup = () => {
     if (password !== confirmPassword) {
       Alert.alert("Error", "Passwords do not match!");
       return;
     }
 
-  
     const userData = {
       fullName,
       username,

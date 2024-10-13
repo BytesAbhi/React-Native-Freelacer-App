@@ -24,11 +24,12 @@ const Index = ({ navigation }) => {
           style={styles.logo}
         />
       </View>
+      
       <TouchableOpacity
         style={styles.homebutton}
-        onPress={() => navigation.navigate("login")}
+        onPress={() => navigation.navigate("select")}
       >
-        <Text style={styles.homebuttonText}>Continue as Freelancer</Text>
+        <Text style={styles.homebuttonText}>Get Started</Text>
       </TouchableOpacity>
     </LinearGradient>
   );

@@ -50,6 +50,7 @@ export default function LoginScreen({ navigation }) {
         Don't have an account?{" "}
         <Button title="Sign Up" onPress={() => navigation.navigate("Signup")} />
       </Text>
+      
     </LinearGradient>
   );
 }

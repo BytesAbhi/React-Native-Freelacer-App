@@ -1,11 +1,11 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 export default function ChoiceScreen() {
   return (
     <LinearGradient
-    colors={["#4AD0C9", "#7E58C7", "#7E58C7"]}
+      colors={["#4AD0C9", "#7E58C7", "#7E58C7"]}
       style={styles.container}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
@@ -21,6 +21,12 @@ export default function ChoiceScreen() {
           onPress={() => navigation.navigate("Signup")}
         />
       </View>
+      <TouchableOpacity
+        style={styles.homebutton}
+        onPress={() => navigation.navigate("Home")}
+      >
+        <Text style={styles.homebuttonText}>Back to Home</Text>
+      </TouchableOpacity>
     </LinearGradient>
   );
 }
