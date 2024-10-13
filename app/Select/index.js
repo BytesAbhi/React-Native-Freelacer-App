@@ -21,12 +21,12 @@ export default function ChoiceScreen() {
           onPress={() => navigation.navigate("Signup")}
         />
       </View>
-      <TouchableOpacity
+      <Link
         style={styles.homebutton}
         onPress={() => navigation.navigate("Home")}
       >
         <Text style={styles.homebuttonText}>Back to Home</Text>
-      </TouchableOpacity>
+      </Link>
     </LinearGradient>
   );
 }
