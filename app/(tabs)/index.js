@@ -14,6 +14,7 @@ export default function HomeScreen() {
     <SafeAreaView>
       <View>
         <Link href="/splash">Hello world</Link>
+
       </View>
     </SafeAreaView>
   );
